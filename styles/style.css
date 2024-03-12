@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    background-color: #22092C;
+    margin: 0px;
+    padding: 0px;
+}
+
+.logoAlura {
+    margin-left: 0.625rem;
+    padding-top: 0.625rem;
+    width: 4%;
+    align-items: center;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: auto;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+main {
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    padding: 1% 0%;
+    gap: 6%;
+}
+
+
+.text-area {
+    border: none;
+    color: #BE3144;
+    text-transform: lowercase;
+    font-size: 32px;
+ 
+    resize: none;
+}
+
+.text-area::placeholder { color:#BE3144; }
+.text-area:focus{
+        outline: none;
+}
+
+.informacao {
+    display: flex;
+    font-size: 20px;
+    color: gray;
+    gap: 0.5rem;
+    align-items: center;
+}
+.exclamacao {
+    width: 2%;
+    height: 2%;
+}
+
+.mensagem {
+    background: #F05941;
+    background-image: none;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 1.5rem;
+    color: #872341;
+    margin-top: 1.25rem;
+    padding-left: 1.25rem;
+    font-size: 32px;
+    justify-items: center;
+    resize: none;
+}
+
+.mensagem:focus{
+    outline: none;
+}
+
+.mensagem::placeholder {
+    color: transparent;
+}
+  
+.mensagem:placeholder-shown {
+    background-image: url(/assets/background-image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.botoes {
+    display: flex;
+    margin-top: 1.125rem;
+    justify-content: space-between;
+    gap: 1.875rem;
+}
+
+.btn-desencriptar {
+    background: #22092C;
+    border: 0.063rem solid #F05941;
+    border-radius: 1.5rem;
+    color: #BE3144;
+    cursor: pointer;
+    height: 4.188rem;
+    width: 20.5rem;
+    font-size: 24px;
+}
+
+.btn-encriptar {
+    background: #F05941;
+    border: 0.063rem solid #F05941;
+    border-radius: 1.5rem;
+    color: #22092C;
+    cursor: pointer;
+    height: 4.188rem;
+    width: 20.5rem;
+    font-size: 24px;
+    font-weight: 400;
+}
+.message-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.125rem;
+}
+
+.btn-copiar {
+    border: 1px solid #22092C;
+    border-radius: 1.5rem;
+    color: #BE3144;
+    cursor: pointer;
+    height: 4.188rem;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 21rem;
+    font-size: 24px;
+    margin-left: 4.1rem;
+    margin-top: 42.5rem;
+}
+
+.rodape {
+    padding: 1.5rem;
+    background-color: #F05941;
+    color: #22092C;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    
+    body {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        width: fit-content;
+    }
+    
+    header{
+        display: flex;
+        align-items: center;
+    }
+
+    .logoAlura{
+        width: 8%;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        width: fit-content;
+        height: fit-content;
+        justify-content: center;
+        padding-left: 2rem;
+    }
+ 
+    .text-area {
+        width: 18em;
+        height: 20em;
+        font-size: 14px;
+    }
+    .text-area::placeholder {
+         justify-content: center;
+    }
+
+    .botoes {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        font-size: 14px;
+    }
+    .informacao {
+        justify-content: center;
+    }
+
+    .mensagem {
+        font-size: 14px;
+    }
+
+    .btn-encriptar {
+        width: 12rem;
+    }
+
+    .btn-desencriptar {
+        width: 12rem;
+    }
+
+    .btn-copiar {
+        width: 10rem;
+        margin-left: 2rem;
+        margin-top: 18rem;
+        font-size: 14px
+    }
+
+    .rodape {
+        font-size: 14px;
+        width: 100%;
+    }
+}
